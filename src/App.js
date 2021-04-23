@@ -1,12 +1,6 @@
 import './App.css';
 import AppRoute from "./pages";
 
-function App() {
-  return (
-    <>
-      <AppRoute/>
-    </>
-  );
-}
+const App = () => <AppRoute/>;
 
 export default App;

@@ -11,7 +11,7 @@ const AppRoute = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/signin">
+        <Route path="/">
           <SignIn/>
         </Route>
       </Switch>
