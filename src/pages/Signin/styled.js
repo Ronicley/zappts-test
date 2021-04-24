@@ -18,3 +18,11 @@ export const ForgotPassword = styled.p`
   color: ${appColor.grayAccent};
   opacity: 1;
 `;
+
+export const FormAction = styled.div`
+  margin: 30px 0 30px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;

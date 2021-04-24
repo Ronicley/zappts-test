@@ -7,7 +7,7 @@ import googleLogo from "../../assets/Google__G__Logo.svg"
 import SimpleImageSlider from "react-simple-image-slider";
 
 
-const AuthenticationContainer = ({title, form, actions, footer}) => {
+const AuthenticationContainer = ({title, form, footer}) => {
   const images = [
     {url: component},
     {url: component},
@@ -25,7 +25,6 @@ const AuthenticationContainer = ({title, form, actions, footer}) => {
           showBullets
           bgColor={"transparent"}
           slideDuration={1}
-
           showNavs
         />
         <Styles.Title>
@@ -46,9 +45,6 @@ const AuthenticationContainer = ({title, form, actions, footer}) => {
             {title}
           </Styles.ForTitle>
           {form}
-          <Styles.FormAction>
-            {actions}
-          </Styles.FormAction>
         </Styles.FormContent>
 
         <Divider text="Or"/>

@@ -63,7 +63,7 @@ export const ForTitle = styled.fieldset`
   opacity: 1;
 `;
 
-export const FormContent = styled.form`
+export const FormContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -72,9 +72,7 @@ export const FormContent = styled.form`
   height: 257px;
 `;
 
-export const FormAction = styled.div`
-  margin: 30px 0 30px 0;
-`;
+
 
 export const Footer = styled.div`
   margin:40px 0 15px 0
