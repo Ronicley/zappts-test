@@ -5,7 +5,7 @@ import Divider from "../Divider";
 import Button from "../Button";
 import googleLogo from "../../assets/Google__G__Logo.svg"
 
-const AuthenticationContainer = () => {
+const AuthenticationContainer = ({title, form, actions, footer}) => {
   return (
     <Styles.Container>
       <Styles.ContainerSlider>
@@ -25,29 +25,18 @@ const AuthenticationContainer = () => {
 
         <Styles.FormContent>
           <Styles.ForTitle>
-            Welcome to Invision
+            {title}
           </Styles.ForTitle>
-          <label>
-            aaaa
-          </label>
-          <input/>
-
-          <label>
-            aaaa
-          </label>
-          <input/>
-
-          <label>
-            aaaa
-          </label>
-          <input/>
+          {form}
           <Styles.FormAction>
-            <Button text="Sign in"/>
+            {actions}
           </Styles.FormAction>
-          <Divider text="Or"/>
-          <Button text="Sign in with Google" icon={googleLogo} bgColor={true}/>
         </Styles.FormContent>
-
+        <Divider text="Or"/>
+        <Button text="Sign in with Google" icon={googleLogo} bgColor={true}/>
+        <Styles.Footer>
+          {footer}
+        </Styles.Footer>
       </Styles.ContainerForm>
     </Styles.Container>
   );

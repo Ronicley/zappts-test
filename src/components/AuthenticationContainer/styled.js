@@ -23,6 +23,10 @@ export const ContainerForm = styled.div`
   background-color: ${appColors.white};
   width: 960px;
   height: 969px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 `;
 
 export const Title = styled.h2`
@@ -50,6 +54,8 @@ export const Paragraph = styled.p`
 `;
 
 export const PageDescription = styled.h2`
+  position: relative;
+  top: 0;
   font: normal normal 900 35px/48px;
   width: 90%;
   text-align: end;
@@ -66,11 +72,16 @@ export const ForTitle = styled.fieldset`
 export const FormContent = styled.form`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-flow: column;
+  width: 434px;
+  height: 257px;
 `;
 
 export const FormAction = styled.div`
   margin: 30px 0 30px 0;
 `;
 
+export const Footer = styled.div`
+  margin:40px 0 15px 0
+`;
