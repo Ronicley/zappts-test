@@ -66,12 +66,11 @@ export const ForTitle = styled.fieldset`
 export const FormContent = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-flow: column;
   width: 434px;
-  height: 257px;
+  height: 500px;
 `;
-
 
 
 export const Footer = styled.div`

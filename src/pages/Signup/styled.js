@@ -21,3 +21,20 @@ export const TermsContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const FormAction = styled.div`
+  margin: 30px 0 30px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Form = styled.form`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-flow: column;
+  height: 350px;
+`;

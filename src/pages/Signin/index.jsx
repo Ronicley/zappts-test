@@ -17,13 +17,18 @@ const SignIn = () => {
             initialValues={{email: '', password: ''}}
             validate={values => {
               const errors = {};
+
               if (!values.email) {
-                errors.email = 'Required';
-              } else if (
-                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-              ) {
-                errors.email = 'Invalid email address';
+                errors.email = 'Este campo não pode ser vazio';
+
+              } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
+                errors.email = 'O e-mail está incorreto';
+
+              } else if (!values.password) {
+                errors.password = "Este campo não pode ser vazio";
+
               }
+
               return errors;
             }}
             onSubmit={(values, {setSubmitting}) => {
@@ -43,7 +48,7 @@ const SignIn = () => {
                 isSubmitting,
                 /* and other goodies */
               }) => (
-              <form onSubmit={handleSubmit}>
+              <Styles.Form  onSubmit={handleSubmit}>
                 <TextField
                   fullWidth={true}
                   label="Users name or Email"
@@ -52,8 +57,9 @@ const SignIn = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.email}
+                  error={!!errors.email}
+                  helperText={errors.email && touched.email && errors.email}
                 />
-                {errors.email && touched.email && errors.email}
                 <TextField
                   fullWidth={true}
                   label="Password"
@@ -62,15 +68,16 @@ const SignIn = () => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.password}
+                  error={!!errors.password}
+                  helperText={errors.password && touched.password && errors.password}
                 />
-                {errors.password && touched.password && errors.password}
                 <Styles.ForgotPassword>
                   Forgot password?
                 </Styles.ForgotPassword>
                 <Styles.FormAction>
-                  <Button text="Sign in"/>
+                  <Button text="Sign in" type="submit" disabled={isSubmitting}/>
                 </Styles.FormAction>
-              </form>
+              </Styles.Form >
             )}
           </Formik>
         </>

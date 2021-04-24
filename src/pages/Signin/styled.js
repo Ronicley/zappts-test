@@ -26,3 +26,12 @@ export const FormAction = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+export const Form = styled.form`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-flow: column;
+  height: 350px;
+`;
