@@ -1,12 +1,14 @@
 import React from 'react';
 import * as Styles from './styled';
-
+import AuthenticationContainer from "../../components/AuthenticationContainer"
 
 const SignIn = () => {
   return (
-    <>
-      <Styles.PageTitle>Login</Styles.PageTitle>
-    </>
+    <AuthenticationContainer>
+      <Styles.PageTitle>
+        Login
+      </Styles.PageTitle>
+    </AuthenticationContainer>
   )
 };
 
