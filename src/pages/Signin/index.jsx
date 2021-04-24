@@ -23,6 +23,9 @@ const SignIn = () => {
             label="Password"
             type="password"
           />
+          <Styles.ForgotPassword>
+            Forgot password?
+          </Styles.ForgotPassword>
         </>
       }
       actions={

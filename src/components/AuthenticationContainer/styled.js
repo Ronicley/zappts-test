@@ -29,7 +29,8 @@ export const ContainerForm = styled.div`
   flex-flow: column;
 `;
 
-export const Title = styled.h2`
+export const Title = styled.p`
+  margin-top:40px;
   font: normal normal normal 30px/38px;
   color: ${appColors.white};
   opacity: 1;
