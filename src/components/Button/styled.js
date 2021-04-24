@@ -3,15 +3,15 @@ import appColor from "../../constants/colors"
 
 export const Button = styled.button`
   ${
-      props => !props.color ? 
-      `background: ${appColor.grayAccent} 0% 0%;
+      props => !props.backgroundColor ? 
+      `background: ${appColor.grayAccent.toString()} 0% 0%;
        width: 175px;
-       color: ${appColor.white};
+       color: ${appColor.white.toString()};
        `
        :
       `width: 263px;
-      background: ${appColor.white} 0% 0%;
-      color: ${appColor.grayAccent};
+      background: ${appColor.white.toString()} 0% 0%;
+      color: ${appColor.grayAccent.toString()};
       box-shadow: 0px 3px 6px #00000029;
       `
   }

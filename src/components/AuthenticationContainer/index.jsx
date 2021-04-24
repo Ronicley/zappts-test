@@ -32,7 +32,9 @@ const AuthenticationContainer = ({title, form, actions, footer}) => {
             {actions}
           </Styles.FormAction>
         </Styles.FormContent>
+
         <Divider text="Or"/>
+
         <Button text="Sign in with Google" icon={googleLogo} bgColor={true}/>
         <Styles.Footer>
           {footer}

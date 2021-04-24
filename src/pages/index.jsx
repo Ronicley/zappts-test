@@ -11,11 +11,9 @@ const AppRoute = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/">
+        <Route path="/signin">
           <SignIn/>
         </Route>
-      </Switch>
-      <Switch>
         <Route path="/signup">
           <SignUp/>
         </Route>

@@ -3,7 +3,7 @@ import * as Styles from "./styled"
 
 const Button = ({text, onClick, bgColor = false, icon}) => {
   return (
-    <Styles.Button onClick={onClick} color={bgColor}>
+    <Styles.Button onClick={onClick} backgroundColor={bgColor}>
       {
         icon&&<img src={icon} alt="icon"/>
       }

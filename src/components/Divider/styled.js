@@ -2,13 +2,13 @@ import styled from "styled-components";
 import appColors from '../../constants/colors'
 
 export const RightBar = styled.div`
-  background-color: ${appColors.grayAccent};
+  background-color: ${appColors.grayAccent.toString()};
   height: 1px;
   width: 100%;
 `;
 
 export const LeftBar = styled.div`
-  background-color: ${appColors.grayAccent};
+  background-color: ${appColors.grayAccent.toString()};
   height: 1px;
   width: 100%;
 `;

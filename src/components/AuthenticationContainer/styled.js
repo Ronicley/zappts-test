@@ -14,13 +14,13 @@ export const ContainerSlider = styled.div`
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  background-color: ${appColors.green};
+  background-color: ${appColors.green.toString()};
   width: 960px;
   height: 969px;
 `;
 
 export const ContainerForm = styled.div`
-  background-color: ${appColors.white};
+  background-color: ${appColors.white.toString()};
   width: 960px;
   height: 969px;
   display: flex;
@@ -54,8 +54,9 @@ export const Paragraph = styled.p`
 `;
 
 export const PageDescription = styled.h2`
-  position: relative;
-  top: 0;
+  right: 83px;
+  position: absolute;
+  top: 98px;
   font: normal normal 900 35px/48px;
   width: 90%;
   text-align: end;

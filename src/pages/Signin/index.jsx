@@ -3,8 +3,10 @@ import * as Styles from './styled';
 import AuthenticationContainer from "../../components/AuthenticationContainer"
 import Button from "../../components/Button";
 import {TextField} from "@material-ui/core";
+import {useHistory} from "react-router-dom";
 
 const SignIn = () => {
+  const history = useHistory();
   return (
     <AuthenticationContainer
       title="Welcome to Invision"
@@ -12,7 +14,7 @@ const SignIn = () => {
         <>
           <TextField
             fullWidth={true}
-            id="standard-basic"
+            id="satandard-basic"
             label="Users name or Email"
           />
           <TextField
@@ -25,7 +27,7 @@ const SignIn = () => {
       }
       actions={
         <>
-          <Button text="Sign in"/>
+          <Button text="Sign in" />
         </>
       }
       footer={
@@ -33,7 +35,7 @@ const SignIn = () => {
           <Styles.Span>
             New <b>Invision</b>?
           </Styles.Span>&nbsp;
-          <Styles.CreateAccountLink>
+          <Styles.CreateAccountLink onClick={() => history.push("/signup")}>
             <u>Create Account</u>
           </Styles.CreateAccountLink>
         </>
