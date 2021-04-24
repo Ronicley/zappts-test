@@ -19,7 +19,7 @@ const AuthenticationContainer = ({title, form, footer}) => {
     <Styles.Container>
       <Styles.ContainerSlider>
         <SimpleImageSlider
-          width={896}
+          width={700}
           height={504}
           images={images}
           showBullets

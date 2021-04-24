@@ -3,10 +3,11 @@ import appColors from "../../constants/colors"
 
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap-reverse;
 `;
 
 export const ContainerSlider = styled.div`
@@ -15,18 +16,27 @@ export const ContainerSlider = styled.div`
   align-items: center;
   flex-flow: column;
   background-color: ${appColors.green.toString()};
-  width: 960px;
-  height: 969px;
+  width: 100vw;
+  height: 100VH;
+
+  @media screen and (min-width: 1200px) {
+    width: 50vw;
+  }
 `;
 
 export const ContainerForm = styled.div`
+  position: relative;
   background-color: ${appColors.white.toString()};
-  width: 960px;
-  height: 969px;
+  width: 100vw;
+  height: 100VH;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  
+  @media screen and (min-width: 1200px) {
+    width: 50vw;
+  }
 `;
 
 export const Title = styled.p`
@@ -59,7 +69,7 @@ export const ForTitle = styled.fieldset`
   border: none;
   font: normal normal normal 30px/38px;
   letter-spacing: 0;
-  color: #707070;
+  color: ${appColors.grayAccent};
   opacity: 1;
 `;
 

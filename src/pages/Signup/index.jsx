@@ -31,6 +31,9 @@ const SignUp = () => {
                 } else if (!values.password) {
                   errors.password = defaultErrorMessage;
 
+                } else if (values.password.length <=5) {
+                  errors.password = "A senha não pode ter menos de 6 caracteres";
+
                 } else if (!values.fullName) {
                   errors.fullName = defaultErrorMessage;
                 }
