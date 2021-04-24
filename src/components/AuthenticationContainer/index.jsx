@@ -4,12 +4,30 @@ import component from '../../assets/component.png'
 import Divider from "../Divider";
 import Button from "../Button";
 import googleLogo from "../../assets/Google__G__Logo.svg"
+import SimpleImageSlider from "react-simple-image-slider";
+
 
 const AuthenticationContainer = ({title, form, actions, footer}) => {
+  const images = [
+    {url: component},
+    {url: component},
+    {url: component},
+    {url: component},
+  ];
+
   return (
     <Styles.Container>
       <Styles.ContainerSlider>
-        <img src={component} alt="Banner alt" width="705" height="555"/>
+        <SimpleImageSlider
+          width={896}
+          height={504}
+          images={images}
+          showBullets
+          bgColor={"transparent"}
+          slideDuration={1}
+
+          showNavs
+        />
         <Styles.Title>
           Marcenas mattis egestas
         </Styles.Title>

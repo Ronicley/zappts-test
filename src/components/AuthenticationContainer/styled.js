@@ -30,26 +30,18 @@ export const ContainerForm = styled.div`
 `;
 
 export const Title = styled.h2`
-  top: 698px;
-  left: 306px;
-  width: 348px;
-  height: 38px;
-  text-align: left;
   font: normal normal normal 30px/38px;
-  letter-spacing: 0;
-  color: #FFFFFF;
+  color: ${appColors.white};
   opacity: 1;
 `;
 
 export const Paragraph = styled.p`
-  top: 756px;
-  left: 202px;
   width: 553px;
   height: 60px;
   text-align: center;
   font: normal normal normal 20px/25px;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: ${appColors.white};
   opacity: 1;
 `;
 
