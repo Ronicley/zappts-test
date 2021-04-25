@@ -16,10 +16,18 @@ test('shows sign in page', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test('Ot validate signin email field test error', async () => {
+test('It validates filling in the email field', async () => {
   const {input} = await setup()
   await act(async () => {
     fireEvent.change(await input, {target: {value: 'email@mail.com'}})
   });
   expect(await input.value).toBe('email@mail.com')
+});
+
+test('It validates error filling the email field', async () => {
+  const {container, input} = await setup()
+  await act(async () => {
+    fireEvent.change(await input, {target: {value: 'email'}})
+  });
+  expect(container.getElementsByClassName("Mui-error").length).toBe(2);
 });
