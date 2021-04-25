@@ -50,6 +50,7 @@ const SignIn = () => {
               }) => (
               <Styles.Form  onSubmit={handleSubmit}>
                 <TextField
+                  inputProps={{ "data-testid": "content-email-input" }}
                   fullWidth={true}
                   label="Users name or Email"
                   type="email"
