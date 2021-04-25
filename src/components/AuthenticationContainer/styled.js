@@ -86,3 +86,7 @@ export const FormContent = styled.div`
 export const Footer = styled.div`
   margin:40px 0 15px 0
 `;
+
+export const SliderContainer = styled.div`
+   
+`;

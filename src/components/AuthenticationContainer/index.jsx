@@ -18,15 +18,17 @@ const AuthenticationContainer = ({title, form, footer}) => {
   return (
     <Styles.Container>
       <Styles.ContainerSlider>
+        <Styles.SliderContainer>
         <SimpleImageSlider
-          width={700}
+          style={{ margin: '0 auto', marginTop: '50px' }}
+          width={896}
           height={504}
           images={images}
           showBullets
           bgColor={"transparent"}
-          slideDuration={1}
           showNavs
         />
+        </Styles.SliderContainer>
         <Styles.Title>
           Marcenas mattis egestas
         </Styles.Title>
@@ -36,9 +38,6 @@ const AuthenticationContainer = ({title, form, footer}) => {
       </Styles.ContainerSlider>
 
       <Styles.ContainerForm>
-        <Styles.PageDescription>
-          Invision
-        </Styles.PageDescription>
 
         <Styles.FormContent>
           <Styles.ForTitle>
