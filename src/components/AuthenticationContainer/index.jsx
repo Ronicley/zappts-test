@@ -3,31 +3,31 @@ import * as Styles from './styled';
 import component from '../../assets/component.png'
 import Divider from "../Divider";
 import Button from "../Button";
-import googleLogo from "../../assets/Google__G__Logo.svg"
-import SimpleImageSlider from "react-simple-image-slider";
-
+import googleLogo from "../../assets/Google__G__Logo.svg";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {Carousel} from "react-responsive-carousel";
 
 const AuthenticationContainer = ({title, form, footer}) => {
-  const images = [
-    {url: component},
-    {url: component},
-    {url: component},
-    {url: component},
-  ];
+
 
   return (
     <Styles.Container>
       <Styles.ContainerSlider>
         <Styles.SliderContainer>
-        <SimpleImageSlider
-          style={{ margin: '0 auto', marginTop: '50px' }}
-          width={896}
-          height={504}
-          images={images}
-          showBullets
-          bgColor={"transparent"}
-          showNavs
-        />
+        <Carousel
+          showThumbs={false}
+          showStatus={false}
+          infiniteLoop={true}
+          autoPlay
+          dynamicHeight={true}
+          transitionTime={2}
+          width={"auto"}
+        >
+          <img src={component} alt={"Img carousel"}/>
+          <img src={component} alt={"Img carousel"}/>
+          <img src={component} alt={"Img carousel"}/>
+          <img src={component} alt={"Img carousel"}/>
+        </Carousel>
         </Styles.SliderContainer>
         <Styles.Title>
           Marcenas mattis egestas
