@@ -2,6 +2,7 @@
   "name": "zappts-test",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.4",
@@ -10,9 +11,9 @@
     "formik": "^2.2.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-responsive-carousel": "^3.2.18",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "react-simple-image-slider": "^2.1.0",
     "styled-components": "^5.2.3",
     "web-vitals": "^1.0.1"
   },
