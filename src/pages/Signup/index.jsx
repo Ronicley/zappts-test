@@ -60,6 +60,7 @@ const SignUp = () => {
                 <Styles.Form onSubmit={handleSubmit}>
                   <TextField
                     fullWidth={true}
+                    inputProps={{ "data-testid": "content-full-input" }}
                     label="Full Name"
                     type="text"
                     name="fullName"
@@ -72,6 +73,7 @@ const SignUp = () => {
                   <TextField
                     fullWidth={true}
                     label="Users name or Email"
+                    inputProps={{ "data-testid": "content-email-input" }}
                     type="email"
                     name="email"
                     onChange={handleChange}
@@ -82,6 +84,7 @@ const SignUp = () => {
                   />
                   <TextField
                     fullWidth={true}
+                    inputProps={{ "data-testid": "content-password-input" }}
                     label="Password"
                     type="password"
                     name="password"
